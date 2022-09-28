@@ -65,7 +65,7 @@ def main():
             user_input = int(input("If you'd like an estimated running time for a number of cities of your choice, insert it below: \n"))
             break
         except ValueError:
-            print('Sorry, I only accept numeric inputs. Try again.\n')
+            print('Sorry, integers only. Try again.\n')
 
     estimated_total_time = numpy.math.factorial(user_input) * user_input * time_to_calc_once
     print(f"If you wanted to calculate considering all {user_input} cities, it would take your computer, running as is, approximately {estimated_total_time:0.4f} seconds.")
